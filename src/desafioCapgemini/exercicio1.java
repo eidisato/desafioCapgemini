@@ -1,3 +1,4 @@
+//Escreva um algoritmo que mostre na tela uma escada de tamanho n utilizando o caractere * e espaÃ§os. A base e altura da escada devem ser iguais ao valor de n. A Ãºltima linha nÃ£o deve conter nenhum espaÃ§o.
 package desafioCapgemini;
 
 import java.util.ArrayList;
@@ -10,14 +11,14 @@ public class exercicio1 {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 
-		// Lista onde o array será adicionado
+		// Lista onde o array serï¿½ adicionado
 		List<String> x = new ArrayList<>();
 
-		// Solicitando um número para o usuário
-		System.out.print("Digite um número: ");
+		// Solicitando um nï¿½mero para o usuï¿½rio
+		System.out.print("Digite um nï¿½mero: ");
 		int n = scan.nextInt();
 
-		// Laço de repetição for e adicionando ao arraylist 
+		// Laï¿½o de repetiï¿½ï¿½o for e adicionando ao arraylist 
 		for (int i = 0; i < n; i++) {
 			x.add(" ".repeat(n - i) + "*".repeat(i + 1));
 		}
